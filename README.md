@@ -5,38 +5,28 @@ A complete NLP pipeline that automatically detects whether input text is Arabic 
 
 # Project structure
 Project/
-    ├── main.py                  # Entry point — handles user input and output
-    ├── langclassifier.py        # Language detection (Arabic vs English)
-    ├── arabictext.py            # Arabic sentiment classifier
-    ├── englishtext.py           # English sentiment classifier
+
+    ├── main.py                  
+    ├── langclassifier.py        
+    ├── arabictext.py           
+    ├── englishtext.py    
     │
-    ├── arabic_model.pkl         # Trained Arabic Naive Bayes model
-    ├── arabic_vectorizer.pkl    # Arabic TF-IDF vectorizer
+    ├── arabic_model.pkl         
+    ├── arabic_vectorizer.pkl    
     │
     ├── data/
-    │   ├── ar_reviews_100k.tsv  # Arabic reviews dataset
-    │   └── sentiment_data.csv   # English sentiment dataset
+    │   ├── ar_reviews_100k.tsv 
+    │   └── sentiment_data.csv   
     │
-    ├── models/                  # Saved model files
-    ├── victorizers/             # Saved vectorizer files
-    ├── word clouds/             # EDA word cloud outputs
+    ├── models/                 
+    ├── victorizers/            
+    ├── word clouds/             
     │
-    └── Task 1 Phase 1.ipynb     # Arabic classifier notebook
-        Task 1 Phase 2.ipynb     # English classifier notebook
-        Task 1 Phase 3.ipynb     # Language classifier notebook
+    └── Task 1 Phase 1.ipynb    
+        Task 1 Phase 2.ipynb     
+        Task 1 Phase 3.ipynb   
 
 
-# System Workflow
-User Input (main.py)
-       ↓
-Language Detection (langclassifier.py)
-       ↓
-  ┌────┴────┐
-Arabic   English
-  ↓          ↓
-arabictext.py   englishtext.py
-  ↓          ↓
-   Final Result (language + predicted class)
 
 
 ## Phases
